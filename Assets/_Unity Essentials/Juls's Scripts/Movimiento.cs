@@ -5,27 +5,28 @@ public class Movimiento : MonoBehaviour
 {
     public float speed = 2.0f; // Set player's movement speed.
     public float rotationSpeed = 120.0f; // Set player's rotation speed.
-    public float fuerzaSalto = 10.0f;
-    public float impulso = 0.05f;
+    public float jumpForce = 5f;          // Force applied upwards
+    public float jumpCooldown = 1f;
 
     private Rigidbody rb; // Reference to player's Rigidbody.
+    private float lastJumpTime;
 
     // Start is called before the first frame update
     private void Start()
     {
         rb = GetComponent<Rigidbody>(); // Access player's Rigidbody.
+        lastJumpTime = -jumpCooldown;
+        rb.freezeRotation = true;
     }
 
     // Update is called once per frame
 
     void Update()
     {
-        if (Input.GetButton("Jump"))
+        if (Input.GetButton("Jump") && Time.time >= lastJumpTime + jumpCooldown)
         {
-            //Debug.log("Salto");
-            rb.AddForce(transform.up * impulso, ForceMode.Impulse);
-            //rb.AddForce(transform.up * fuerzaSalto);
-            //rb.AddForce(impulso, 0, 0, ForceMode.Impulse);
+            Jump();
+
         }
     }
 
@@ -42,4 +43,21 @@ public class Movimiento : MonoBehaviour
         Quaternion turnRotation = Quaternion.Euler(0f, turn, 0f);
         rb.MoveRotation(rb.rotation * turnRotation);
     }
+
+    void Jump()
+    {
+        // Reset any downward velocity for consistent jump feel
+        Vector3 velocity = rb.velocity;
+        if (velocity.y < 0)
+            velocity.y = 0;
+
+        rb.velocity = velocity;
+
+        // Apply force in the global up direction
+        rb.AddForce(Vector3.up * jumpForce, ForceMode.VelocityChange);
+
+        // Store jump time
+        lastJumpTime = Time.time;
+    }
+
 }
