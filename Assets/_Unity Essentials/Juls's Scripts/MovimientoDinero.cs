@@ -6,6 +6,7 @@ public class MovimientoDinero : MonoBehaviour
 {
     public float rotationSpeed=0.8f;
 
+    public AudioClip pickupSound;
     public GameObject onCollectEffect;
     private Vector3 posicionInicial;
     public float amplitud = 0.01f;
@@ -31,6 +32,7 @@ public class MovimientoDinero : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Destroy(gameObject);
+            AudioSource.PlayClipAtPoint(pickupSound, transform.position);
             Instantiate(onCollectEffect, transform.position, transform.rotation);
         }
     }
