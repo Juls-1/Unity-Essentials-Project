@@ -27,10 +27,11 @@ public class UpdateCollectibleCount : MonoBehaviour
         int totalCollectibles = 0;
 
         // Check and count objects of type Collectible
-        Type collectibleType = Type.GetType("Collectible");
+        Type collectibleType = Type.GetType("MovimientoDinero");
         if (collectibleType != null)
         {
             totalCollectibles += UnityEngine.Object.FindObjectsOfType(collectibleType).Length;
+            //totalCollectibles += FindObjectsOfType<collectible_KeyType>().Length;
         }
 
         // Optionally, check and count objects of type Collectible2D as well if needed
@@ -41,7 +42,7 @@ public class UpdateCollectibleCount : MonoBehaviour
         }
 
         // Update the collectible count display
-        collectibleText.text = $"Quesos Restantes: {totalCollectibles}";
+        collectibleText.text = $"Puertas por abrir: {totalCollectibles}";
 
 
     }
