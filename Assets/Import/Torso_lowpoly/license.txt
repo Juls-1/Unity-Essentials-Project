@@ -1,0 +1,11 @@
+Model Information:
+* title:	Torso_lowpoly
+* source:	https://sketchfab.com/3d-models/torso-lowpoly-9f052883107045539475bbeb842e00a2
+* author:	praphulchoudhry (https://sketchfab.com/praphulchoudhry)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Torso_lowpoly" (https://sketchfab.com/3d-models/torso-lowpoly-9f052883107045539475bbeb842e00a2) by praphulchoudhry (https://sketchfab.com/praphulchoudhry) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

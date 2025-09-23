@@ -1,0 +1,11 @@
+Model Information:
+* title:	Simple Easel
+* source:	https://sketchfab.com/3d-models/simple-easel-5bf4ac798538472cba1b709962903f93
+* author:	f24816 (https://sketchfab.com/f24816)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Simple Easel" (https://sketchfab.com/3d-models/simple-easel-5bf4ac798538472cba1b709962903f93) by f24816 (https://sketchfab.com/f24816) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tattoo Tip
+* source:	https://sketchfab.com/3d-models/tattoo-tip-77b20f8ccdcd40c9828020f4ee4a6a0a
+* author:	leo222 (https://sketchfab.com/leo222)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tattoo Tip" (https://sketchfab.com/3d-models/tattoo-tip-77b20f8ccdcd40c9828020f4ee4a6a0a) by leo222 (https://sketchfab.com/leo222) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
